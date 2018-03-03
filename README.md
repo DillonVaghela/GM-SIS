@@ -1,8 +1,8 @@
 ## TEAM 31 - GARAGE MANAGEMENT SYSTEM
 
-Software Engineering Project for Queen Mary University of London. The team had to produce a complete software solution based on a document outlining requirements. Each team member received an individual grade. My **personal grade for the project was 93%**. My personal contribution to the effort was:
+Software Engineering Project for Queen Mary University of London. The team had to produce a complete software solution based on a document outlining requirements. Each team member received an individual grade. My **personal grade for the project was 92%**. My personal contribution to the effort was:
 
-1. **Designed Specialist repair centre related classes**
+1. **Designed Specialist repair centre related classes.**
 2. **Helping the project leader [Marcello De Bernadi](https://github.com/marcellodebernardi) with minor issues in the software.**
 3.**Help colleagues with their own modules**
 
