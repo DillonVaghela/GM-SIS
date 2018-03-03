@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/8.0.111" fx:controller="controllers.booking.DetailsController"
+            id="detailsPane">
+    <top>
+        <HBox id="detailsTitle">
+            <Text fx:id="paneTitle">Add Booking</Text>
+        </HBox>
+    </top>
+    <center>
+        <GridPane id="detailsGridPane">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="30.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="35.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="35.0"/>
+            </columnConstraints>
+            <!-- Select a customer -->
+            <Label GridPane.rowIndex="0" GridPane.columnIndex="0">Customer</Label>
+            <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                       fx:id="customerSearchBar" onAction="#pickCustomer" promptText="Select a customer"/>
+
+            <!-- Select a vehicle -->
+            <Label GridPane.rowIndex="1" GridPane.columnIndex="0">Vehicle</Label>
+            <ComboBox GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                      fx:id="vehicleComboBox" onAction="#pickVehicle" promptText="Select a vehicle"/>
+
+            <Label GridPane.rowIndex="2" GridPane.columnIndex="0">Description</Label>
+            <TextField GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                       fx:id="descriptionTextField" id="descriptionTextField" promptText="Provide a description"/>
+
+            <!-- Diagnosis date and time -->
+            <Label GridPane.rowIndex="3" GridPane.columnIndex="0">Diagnosis Date</Label>
+            <DatePicker GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                        fx:id="diagnosisDatePicker" promptText="Pick a date"/>
+            <Label GridPane.rowIndex="4" GridPane.columnIndex="0">Diagnosis Time</Label>
+            <TextField GridPane.rowIndex="4" GridPane.columnIndex="1"
+                       fx:id="diagnosisStartTimeTextField" promptText="HH:mm"/>
+            <TextField GridPane.rowIndex="4" GridPane.columnIndex="2"
+                       fx:id="diagnosisEndTimeTextField" promptText="HH:mm"/>
+
+            <!-- Repair date and time -->
+            <Label GridPane.rowIndex="5" GridPane.columnIndex="0">Repair Date</Label>
+            <DatePicker GridPane.rowIndex="5" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                        fx:id="repairDatePicker" promptText="Pick a date"/>
+            <Label GridPane.rowIndex="6" GridPane.columnIndex="0">Repair Time</Label>
+            <TextField GridPane.rowIndex="6" GridPane.columnIndex="1"
+                       fx:id="repairStartTimeTextField" promptText="HH:mm"/>
+            <TextField GridPane.rowIndex="6" GridPane.columnIndex="2"
+                       fx:id="repairEndTimeTextField" promptText="HH:mm"/>
+
+            <!-- Mechanic tasked on repair -->
+            <Label GridPane.rowIndex="7" GridPane.columnIndex="0">Mechanic</Label>
+            <ComboBox GridPane.rowIndex="7" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                      fx:id="mechanicComboBox" onAction="#pickMechanic" promptText="Select a mechanic"/>
+
+            <!-- Parts needed for repair -->
+            <Label GridPane.rowIndex="8" GridPane.columnIndex="0">Parts</Label>
+            <BorderPane GridPane.rowIndex="8" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                <center>
+                    <TableView
+                            id="bookingPartsTable" fx:id="partsTable">
+                        <columns>
+                            <TableColumn text="Name" fx:id="nameColumn"/>
+                            <TableColumn text="Cost" fx:id="costColumn"/>
+                            <TableColumn text="SPC" fx:id="subcontractedColumn"/>
+                        </columns>
+                    </TableView>
+                </center>
+                <right>
+                    <VBox id="partsButtonsVBox">
+                        <Button id="addPartButton" fx:id="addPartButton" onAction="#addPart"/>
+                        <Button id="removePartButton" fx:id="removePartButton" onAction="#removeSelectedPart"/>
+                    </VBox>
+                </right>
+            </BorderPane>
+
+            <!-- Mileage -->
+            <Label GridPane.rowIndex="9" GridPane.columnIndex="0">Mileage</Label>
+            <TextField GridPane.rowIndex="9" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                       id="vehicleMileageTextField" fx:id="mileageTextField"/>
+            <Label GridPane.rowIndex="10" GridPane.columnIndex="0">New Mileage</Label>
+            <TextField GridPane.rowIndex="10" GridPane.columnIndex="1" GridPane.columnSpan="2"
+                       id="newVehicleMileageTextField" fx:id="newMileageTextField"
+                       promptText="Before completing, record new mileage"/>
+
+            <Label GridPane.rowIndex="11" GridPane.columnIndex="0">Bill settled</Label>
+            <CheckBox fx:id="settledCheckBox" GridPane.rowIndex="11" GridPane.columnIndex="1"/>
+        </GridPane>
+    </center>
+    <bottom>
+        <HBox id="detailsButtons">
+            <Button fx:id="saveButton" onAction="#save">Save</Button>
+            <Button fx:id="completeButton" onAction="#complete">Complete</Button>
+            <Button onAction="#clear">New</Button>
+            <Button fx:id="deleteButton" onAction="#delete">Delete</Button>
+        </HBox>
+    </bottom>
+</BorderPane>

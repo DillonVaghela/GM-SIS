@@ -1,0 +1,110 @@
+/* BOOKINGS SECTION */
+#calendarPane, #listPane {
+    -fx-padding: 0em 1em 1em 1em;
+}
+
+#calendarPaneTopControls, #listPaneTopControls {
+    -fx-spacing: 1em;
+    -fx-padding: 0.7em 0em 0.7em 0em;
+    -fx-alignment: center-left;
+}
+
+#calendarPaneTopControls TextField, #listPaneTopControls TextField {
+    -fx-pref-width: 15em;
+}
+
+#paneSwitcherControls {
+    -fx-spacing: 1em;
+    -fx-padding: 0em 1em 0em 1em;
+}
+
+#paneSwitcherControls Button {
+    -fx-pref-width: 8em;
+}
+
+#detailsPane {
+    -fx-pref-width: 30em;
+    -fx-padding: 0em 1em 0em 1em;
+    -fx-border-style: solid;
+    -fx-border-color: lightgray;
+    -fx-border-width: 0px 1px 0px 0px;
+}
+
+#detailsGridPane {
+    -fx-vgap: 10px;
+}
+
+#bookingPartsTable {
+    -fx-pref-height: 10em;
+}
+
+#partsButtonsVBox {
+    -fx-alignment: top-right;
+    -fx-spacing: 0.5em;
+    -fx-padding: 0em 0em 0em 1em;
+}
+
+#partsButtonsVBox Button {
+    -fx-background-color: #F57C00;
+    -fx-min-height: 26px;
+    -fx-min-width: 26px;
+    -fx-background-size: 23px 23px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-radius: 26px;
+    -fx-background-position: center;
+    -fx-font-family: 'Roboto Light';
+}
+
+#partsButtonsVBox Button:hover {
+    -fx-background-color: #FB8C00;
+}
+
+#addPartButton {
+    -fx-background-image: url("/booking/images/plus.png");
+}
+
+#removePartButton {
+    -fx-background-image: url("/booking/images/minus.png");
+}
+
+#PartsPopOverPane #partsTable {
+    -fx-pref-height: 10em;
+    -fx-pref-width: 25em;
+}
+
+#PartsPopOverPane {
+    -fx-pref-width: 50em;
+}
+
+#detailsButtons {
+    -fx-padding: 0em 0.8em 1em 0em;
+    -fx-alignment: center;
+    -fx-spacing: 0.5em;
+}
+
+#detailsButtons Button {
+    -fx-pref-width: 9em;
+}
+
+#doubleTableVBox {
+    -fx-vgap: 1em;
+    -fx-spacing: 1em;
+}
+
+#partsTop {
+    -fx-padding: 1em 0em 1em 0em;
+    -fx-alignment: center;
+}
+
+.diagnosisAppointment {
+    -fx-background-color: #e03331;
+}
+
+.repairAppointment {
+    -fx-background-color: #25bbef;
+}
+
+.holidayAppointment {
+    -fx-background-color: lightgray;
+    -fx-opacity: 0.5;
+}

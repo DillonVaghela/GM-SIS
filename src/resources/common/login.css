@@ -1,0 +1,41 @@
+/* LOGIN SCREEN STYLESHEET */
+
+#BorderPane {
+    -fx-padding: 5em;
+    -fx-font-family: "Roboto Light";
+}
+
+#GridPane {
+    -fx-padding: 2em;
+    -fx-vgap: 0.5em;
+    -fx-fill-width: true;
+}
+
+HBox {
+    -fx-alignment: center;
+}
+
+#titleText {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 2em;
+    -fx-padding: 1em;
+}
+
+#username {
+    -fx-max-height: 0.5em;
+}
+
+#password {
+    -fx-max-height: 1em;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+}
+
+#bottomBox {
+    -fx-fill-width: true;
+    -fx-spacing: 1em;
+}
+
+#bottomBox Button {
+    -fx-pref-width: 10em;
+}
