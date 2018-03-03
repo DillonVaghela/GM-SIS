@@ -1,16 +1,15 @@
 ## TEAM 31 - GARAGE MANAGEMENT SYSTEM
 
-Software Engineering Project for Queen Mary University of London (second year, second semester). The team had to produce a complete software solution based on a document outlining requirements. Each team member received an individual grade. My **personal grade for the project was 95%**. My personal contribution to the effort was:
+Software Engineering Project for Queen Mary University of London. The team had to produce a complete software solution based on a document outlining requirements. Each team member received an individual grade. My **personal grade for the project was 93%**. My personal contribution to the effort was:
 
-1. **Team leader**
-2. **Designed the overall architecture** of the software (based on [Uncle Bob's clean architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html), the architecture is an example of **domain-driven-development** and emphasizes heavily **dependency inversion**)
-3. Wrote a **custom ORM framework** to completely abstract the database, found in the persistence package
-4. Responsible for the **bookings module** of the software
+1. **Designed Specialist repair centre related classes**
+2. **Helping the project leader [Marcello De Bernadi](https://github.com/marcellodebernardi) with minor issues in the software.**
+3.**Help colleagues with their own modules**
 
 ### CONTRIBUTORS
 1. [Ebubechukwu Abara](https://github.com/ena3)
 2. Dillon Vaghela
-3. Marcello De Bernardi
+3. [Marcello De Bernardi](https://github.com/marcellodebernardi)
 4. Muhammad Hoque
 5. Muhammad Ahmed
 
